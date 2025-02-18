@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: antiquewhite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    background: linear-gradient(to right, #000000, #313131);
+    color: white;
+    width: 98%;
+    justify-content: space-between; /* Alinea el contenido a los lados opuestos */
+    padding: 10px 20px;
+}
+
+header img {
+    align-self: center; /* Alinea verticalmente la imagen */
+}
+
+.eslogan {
+    width: 350px;
+}
+
+.logo {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6fa7c2; /* Cambia el color al pasar el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: linear-gradient(to right, #000000, #313131);
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para un efecto de profundidad */
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 200px;  
+}
+
+.borderedondeado {
+    border: 2px solid #000000; /* Borde sólido de 2px de color gris */
+    border-radius: 15px; /* Borde redondeado con un radio de 15px */
+    padding: 20px; /* Espacio interno para que el contenido no esté pegado al borde */
+    margin: 10px 0; /* Margen superior e inferior para separar las secciones */
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.borderedondeado h2 {
+    text-align: center;
+}
+
+.recuadros {
+    display: flex;
+    flex-direction: row;
+}
+
+section ul {
+    list-style: none;
+}
+
+.textoconcienciacion {
+    font-size: 18px;
+}
+
+.textoconcienciacion h3 {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
