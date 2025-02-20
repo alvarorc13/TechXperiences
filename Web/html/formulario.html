@@ -7,19 +7,19 @@
         TechXperiences
     </title>
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="stylesheet" href="/css/formulario.css">  
 </head>
 
 <body>
     <header>
-        <a href="../index.html"><img class="logo" src="../img/logo_experiencias.png" alt="Logo de la web"></a>
+            <a href="../index.html"><img class="logo" src="../img/logo_experiencias.png" alt="Logo de la web"></a>
         
         <img class="eslogan" src="../img/eslogan.png" alt="Vive, cuenta, conecta">
         <nav>
             <a href="sobrenosotros.html">Sobre Nosotros</a>
-            <a href="html/formulario.html">Formulario</a>
+            <a href="formulario" class="marcada">Formulario</a>
             <a href="experiencias.html">Experiencias</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="informate.html">Infórmate</a>
         </nav>
     </header>
 
@@ -31,15 +31,15 @@
             <input type="text" id="nombre" name="nombre" required>
             <br><br>
             <label for="apellidos">Apellidos</label><br>
-            <input type="apellidos" id="apellidos" name="apellidos" required>
+            <input type="text" id="apellidos" name="apellidos" required>
             <br><br>
             <label for="correo">Correo electrónico</label><br>
-            <input type="apellidos" id="apellidos" name="apellidos" required>
+            <input type="text" id="apellidos" name="apellidos" required>
             <br><br>
             <label for="edad">Edad</label><br>
-            <input type="edad" id="edad" name="edad">
+            <input type="number" id="edad" name="edad">
             <br><br>
-            <label for="sexo">Sexo</label><br>
+            <label class="label-sexo" for="sexo">Sexo</label><br>
             <input type="radio" name="sexo" id="sexoM" value="sexoM" checked>
             <label for="sexoM">Masculino</label><br>
             <input type="radio" name="sexo" id="sexoF" value="sexoF">

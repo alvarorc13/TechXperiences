@@ -10,6 +10,7 @@ body {
 
 /* Estilos para el encabezado */
 header {
+    /* position: fixed; */
     display: flex;
     background: linear-gradient(to right, #000000, #313131);
     color: white;
@@ -119,4 +120,10 @@ section ul {
     text-align: center;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(45, 45, 45, 0.5);
+}
+
+.marcada {
+    border: 2px dashed bisque;
+    border-radius: 15px;
+    padding: 10px;
 }

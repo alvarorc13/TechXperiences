@@ -71,12 +71,6 @@ footer img {
     text-shadow: 2px 2px 4px rgba(45, 45, 45, 0.5);
 }
 
-.marcada {
-    border: 2px dashed bisque;
-    border-radius: 15px;
-    padding: 10px;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
