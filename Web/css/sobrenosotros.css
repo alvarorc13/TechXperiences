@@ -14,12 +14,14 @@ header {
     background: linear-gradient(to right, #000000, #313131);
     color: white;
     width: 98%;
-    justify-content: space-between; /* Alinea el contenido a los lados opuestos */
+    justify-content: space-between;
+    /* Alinea el contenido a los lados opuestos */
     padding: 10px 20px;
 }
 
 header img {
-    align-self: center; /* Alinea verticalmente la imagen */
+    align-self: center;
+    /* Alinea verticalmente la imagen */
 }
 
 .eslogan {
@@ -44,7 +46,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #6fa7c2; /* Cambia el color al pasar el ratón */
+    color: #6fa7c2;
+    /* Cambia el color al pasar el ratón */
 }
 
 /* Estilos para el pie de página */
@@ -54,13 +57,14 @@ footer {
     padding: 10px 0;
     background: linear-gradient(to right, #000000, #313131);
     color: white;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para un efecto de profundidad */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra para un efecto de profundidad */
     justify-content: center;
     align-items: center;
 }
 
 footer img {
-    width: 200px;  
+    width: 200px;
 }
 
 .conjuntorecuadros {
@@ -73,7 +77,7 @@ footer img {
 
 }
 
-.conjuntorecuadros div{
+.conjuntorecuadros div {
     font-size: 20px;
     border: 2px solid black;
     border-radius: 15px;
@@ -87,7 +91,7 @@ footer img {
 
 
 
-.recuadro p{
+.recuadro p {
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
@@ -118,3 +122,62 @@ p {
     padding: 10px;
 }
 
+.horario .disponible {
+    background-color: #6fa7c2;
+}
+
+.horario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.horario table {
+    display: flex;
+    border: 10px inset black;
+    font-size: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.horario table th {
+    border: 2px solid black;
+}
+
+.horario table td {
+    border: 2px solid black;
+}
+
+.introhorario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #000000, #292929);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.titular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 20px 0;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
