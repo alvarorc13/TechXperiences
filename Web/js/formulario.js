@@ -1,4 +1,3 @@
-// Función para validar el formulario
 function validarFormulario(event) {
     // Obtenemos los valores de los campos
     const nombre = document.getElementById('nombre').value;
@@ -7,7 +6,7 @@ function validarFormulario(event) {
     const edad = document.getElementById('edad').value;
     const descripcion = document.getElementById('descripcion').value;
     const sexo = document.querySelector('input[name="sexo"]:checked');
-    
+
     // Validación de campos obligatorios
     if (!nombre || !apellidos || !correo || !sexo) {
         alert('Por favor, complete todos los campos obligatorios.');
@@ -37,6 +36,9 @@ function validarFormulario(event) {
         return false;
     }
 
-    // Si todo está correcto, se puede enviar el formulario
+    // Si todo está correcto, mostramos la alerta
+    alert('Formulario enviado. Ahora un moderador revisará el contenido antes de publicarlo en la web.');
+
+    // Permitir el envío del formulario (evitamos que el formulario sea bloqueado por la validación)
     return true;
 }
