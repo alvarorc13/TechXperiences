@@ -1,0 +1,56 @@
+main {
+    padding: 20px;
+}
+
+.introduccion h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introduccion p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Categorías de Experiencias */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categoria {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 45%;
+}
+
+.categoria h3 {
+    color: #333;
+}
+
+.experiencia {
+    background-color: #f4f4f4;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.experiencia h4 {
+    margin: 0;
+    color: #555;
+}
+
+.experiencia p {
+    color: #666;
+    font-size: 0.95em;
+}
+
+.experiencia strong {
+    font-weight: bold;
+}

@@ -7,7 +7,8 @@
         TechXperiences
     </title>
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/formulario.css">  
+    <link rel="stylesheet" href="/css/formulario.css"> 
+    <script src="formulario.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <img class="eslogan" src="../img/eslogan.png" alt="Vive, cuenta, conecta">
         <nav>
             <a href="sobrenosotros.html">Sobre Nosotros</a>
-            <a href="formulario" class="marcada">Formulario</a>
+            <a href="formulario.html" class="marcada">Formulario</a>
             <a href="experiencias.html">Experiencias</a>
             <a href="informate.html">Infórmate</a>
         </nav>
@@ -48,11 +49,20 @@
             <label for="sexoNB">No binario</label>
         </fieldset>
         <fieldset>
-            <legend>Otros</legend>
+            <legend>Experiencia</legend>
             <label for="tipo-experiencia">Tipo de experiencia</label>
             <select name="tipo-experiencia" id="tipo-experiencia">
                 <option value="positiva">Positiva</option>
                 <option value="negativa">Negativa</option>
+            </select>
+            <label for="categoria-experiencia">Categoria de experiencia</label>
+            <select name="categoria-experiencia" id="categoria-experiencia">
+                <option value="smartphone">Smartphone</option>
+                <option value="redes-sociales">Redes Sociales</option>
+                <option value="educacion-online">Educacion Online</option>
+                <option value="videojuegos">Videojuegos</option>
+                <option value="IA">Inteligencia Artificial</option>
+                <option value="otra">Otra</option>
             </select>
             <br><br>
             <label for="descripcion">Observaciones</label><br>
