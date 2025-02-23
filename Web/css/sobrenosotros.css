@@ -104,18 +104,6 @@ p {
     text-align: justify;
 }
 
-.imagen {
-    display: flex;
-    border: 2px solid black;
-    border-radius: 15px;
-    justify-content: center;
-    padding: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 30px;
-    width: auto;
-}
-
 .marcada {
     border: 2px dashed bisque;
     border-radius: 15px;
@@ -172,12 +160,43 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin: 20px 0;
     padding: 20px;
     color: rgb(0, 0, 0);
-    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.titular p {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(45, 45, 45, 0.5);
+}
+
+.recuadro img {
+    width: 300px;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: auto;
+    justify-content: space-between;
+}
+
+.imagen {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagen img {
+    width: 400px;
 }
