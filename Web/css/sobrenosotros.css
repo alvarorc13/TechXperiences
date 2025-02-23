@@ -1,3 +1,76 @@
+/* Estilos generales (sin cambios) */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: antiquewhite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilos para el encabezado (sin cambios) */
+header {
+    position: fixed;
+    display: flex;
+    background: linear-gradient(to right, #000000, #313131);
+    color: white;
+    width: 98%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000; /* Asegura que el header esté por encima del contenido */
+}
+
+header img {
+    align-self: center;
+}
+
+.eslogan {
+    width: 350px;
+}
+
+.logo {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6fa7c2;
+}
+
+/* Estilos para el pie de página (sin cambios) */
+footer {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: linear-gradient(to right, #000000, #313131);
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+div.enlaces-footer {
+    margin-left: 30px;
+}
+
+footer img {
+    width: 200px;  
+}
+
+/* Estilos para las secciones (sin cambios) */
 .conjuntorecuadros {
     display: flex;
     width: 98%;
@@ -5,7 +78,6 @@
     flex-direction: row;
     padding: 15px;
     flex-wrap: wrap;
-
 }
 
 .conjuntorecuadros div {
@@ -20,7 +92,6 @@
     margin-bottom: 30px;
 }
 
-
 .recuadro p {
     margin-top: 15px;
     margin-left: 15px;
@@ -28,7 +99,6 @@
     margin-bottom: 15px;
     padding: 15px;
 }
-
 
 p {
     text-align: justify;
@@ -129,4 +199,133 @@ p {
 
 .imagen img {
     width: 400px;
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 1024px) {
+    /* Ajustes para tablets */
+    .conjuntorecuadros div {
+        width: 45%; /* Dos recuadros por fila en tablets */
+    }
+
+    .titular p {
+        font-size: 32px; /* Tamaño de fuente más pequeño */
+    }
+
+    .introhorario {
+        font-size: 24px; /* Tamaño de fuente más pequeño */
+    }
+
+    .imagen img {
+        width: 300px; /* Reduce el tamaño de las imágenes */
+    }
+
+    /* Ajustes para la cabecera en tablets */
+    header {
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .eslogan {
+        width: 250px; /* Reduce el tamaño del eslogan */
+    }
+
+    .logo {
+        width: 150px; /* Reduce el tamaño del logo */
+    }
+
+    nav a {
+        font-size: 20px; /* Reduce el tamaño de la fuente */
+        margin: 0 10px; /* Reduce el margen entre enlaces */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para tablets pequeñas y móviles grandes */
+    .conjuntorecuadros div {
+        width: 100%; /* Un recuadro por fila en móviles */
+        margin: 10px 0; /* Margen superior e inferior */
+    }
+
+    .titular p {
+        font-size: 28px; /* Tamaño de fuente más pequeño */
+    }
+
+    .introhorario {
+        font-size: 20px; /* Tamaño de fuente más pequeño */
+    }
+
+    .imagen img {
+        width: 250px; /* Reduce el tamaño de las imágenes */
+    }
+
+    .horario {
+        width: 100%; /* Ajusta el ancho de la tabla */
+        overflow-x: auto; /* Permite el desplazamiento horizontal */
+    }
+
+    .horario table {
+        font-size: 16px; /* Tamaño de fuente más pequeño */
+    }
+
+    /* Ajustes para la cabecera en tablets pequeñas y móviles grandes */
+    header {
+        flex-direction: column; /* Cambia a una columna */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .eslogan {
+        display: none; /* Oculta el eslogan en pantallas pequeñas */
+    }
+
+    .logo {
+        width: 150px; /* Mantiene el tamaño reducido del logo */
+    }
+
+    header nav {
+        margin-top: 10px; /* Añade espacio entre el logo y los enlaces */
+    }
+
+    nav a {
+        font-size: 18px; /* Reduce aún más el tamaño de la fuente */
+        margin: 0 8px; /* Reduce el margen entre enlaces */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para móviles pequeños */
+    .titular p {
+        font-size: 24px; /* Tamaño de fuente más pequeño */
+    }
+
+    .introhorario {
+        font-size: 18px; /* Tamaño de fuente más pequeño */
+    }
+
+    .imagen img {
+        width: 200px; /* Reduce el tamaño de las imágenes */
+    }
+
+    .horario table {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+
+    /* Ajustes para la cabecera en móviles pequeños */
+    header {
+        padding: 5px; /* Reduce aún más el padding */
+    }
+
+    .logo {
+        width: 120px; /* Reduce el tamaño del logo */
+    }
+
+    header nav {
+        flex-direction: column; /* Cambia a una columna en móviles */
+        gap: 5px; /* Espacio entre enlaces */
+    }
+
+    nav a {
+        font-size: 16px; /* Tamaño de fuente más pequeño */
+        margin: 0; /* Elimina el margen horizontal */
+    }
 }

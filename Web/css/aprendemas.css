@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Estilos generales (sin cambios) */
 body {
     font-family: 'Arial', sans-serif;
     background-color: antiquewhite;
@@ -8,18 +8,23 @@ body {
     text-align: center;
 }
 
-/* Estilos para el encabezado */
+/* Estilos para el encabezado (sin cambios) */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     background: linear-gradient(to right, #000000, #313131);
     color: white;
-    width: 98%;
-    justify-content: space-between; /* Alinea el contenido a los lados opuestos */
+    width: 100%;
+    justify-content: space-between;
     padding: 10px 20px;
+    z-index: 1000; /* Asegura que el header esté por encima del contenido */
 }
 
 header img {
-    align-self: center; /* Alinea verticalmente la imagen */
+    align-self: center;
 }
 
 .eslogan {
@@ -44,17 +49,17 @@ nav a {
 }
 
 nav a:hover {
-    color: #6fa7c2; /* Cambia el color al pasar el ratón */
+    color: #6fa7c2;
 }
 
-/* Estilos para el pie de página */
+/* Estilos para el pie de página (sin cambios) */
 footer {
     display: flex;
     margin-top: 20px;
     padding: 10px 0;
     background: linear-gradient(to right, #000000, #313131);
     color: white;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para un efecto de profundidad */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
     align-items: center;
 }
@@ -69,7 +74,99 @@ footer img {
     padding: 10px;
 }
 
-.videocontainer {
-    display: flex;
-    justify-content: space-between;
+/* Estilos para el contenedor de videos (sin cambios) */
+.video-container {
+    display: grid;
+    gap: 20px; /* Espacio entre los videos */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.video-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: #000000;
+    margin-bottom: 30px;
+}
+
+.video-item h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.textopresentacion p {
+    margin-top: 70px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(45, 45, 45, 0.5);
+}
+
+/* Media Queries solo para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustes para tablets y móviles */
+    .video-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .video-item iframe {
+        width: 100%; /* Ajusta el ancho del iframe al 100% */
+        height: auto; /* Altura automática para mantener la proporción */
+    }
+
+    .textopresentacion p {
+        font-size: 32px; /* Reduce el tamaño de la fuente */
+    }
+
+    /* Ajustes para la cabecera en pantallas pequeñas */
+    header {
+        flex-direction: column; /* Cambia a una columna */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .eslogan {
+        display: none; /* Oculta el eslogan en pantallas pequeñas */
+    }
+
+    .logo {
+        width: 150px; /* Reduce el tamaño del logo */
+    }
+
+    header nav {
+        margin-top: 10px; /* Añade espacio entre el logo y los enlaces */
+    }
+
+    nav a {
+        font-size: 18px; /* Reduce el tamaño de la fuente */
+        margin: 0 8px; /* Reduce el margen entre enlaces */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para móviles pequeños */
+    .textopresentacion p {
+        font-size: 28px; /* Reduce el tamaño de la fuente */
+    }
+
+    .video-item h2 {
+        font-size: 16px; /* Reduce el tamaño de la fuente del título */
+    }
+
+    /* Ajustes para la cabecera en móviles pequeños */
+    header nav {
+        flex-direction: column; /* Cambia a una columna en móviles */
+        gap: 5px; /* Espacio entre enlaces */
+    }
+
+    nav a {
+        font-size: 16px; /* Tamaño de fuente más pequeño */
+        margin: 0; /* Elimina el margen horizontal */
+    }
 }

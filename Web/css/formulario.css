@@ -1,3 +1,74 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: antiquewhite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: linear-gradient(to right, #000000, #313131);
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header img {
+    align-self: center;
+}
+
+.eslogan {
+    width: 350px;
+}
+
+.logo {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6fa7c2;
+}
+
+
+footer {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: linear-gradient(to right, #000000, #313131);
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 200px;  
+}
+
+
 form {
     margin-top: 100px;
     padding: 15px;
@@ -53,13 +124,6 @@ input[type="radio"] {
     float: left;
 }
 
-label-sexo
-
-input[type="number"] {
-    width: 50px;
-    float: left;
-}
-
 textarea {
     resize: vertical;
 }
@@ -79,4 +143,78 @@ button {
 
 button:hover {
     background-color: #444;
+}
+
+/* Media Queries solo para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustes para tablets y móviles */
+    form {
+        width: 70%; /* Aumenta el ancho del formulario en pantallas pequeñas */
+    }
+
+    /* Ajustes para la cabecera en pantallas pequeñas */
+    header {
+        flex-direction: column; /* Cambia a una columna */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .eslogan {
+        display: none; /* Oculta el eslogan en pantallas pequeñas */
+    }
+
+    .logo {
+        width: 150px; /* Reduce el tamaño del logo */
+    }
+
+    header nav {
+        margin-top: 10px; /* Añade espacio entre el logo y los enlaces */
+    }
+
+    nav a {
+        font-size: 18px; /* Reduce el tamaño de la fuente */
+        margin: 0 8px; /* Reduce el margen entre enlaces */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para móviles pequeños */
+    form {
+        width: 90%; /* Aumenta aún más el ancho del formulario en móviles */
+    }
+
+    form h2 {
+        font-size: 20px; /* Reduce el tamaño de la fuente del título */
+    }
+
+    legend {
+        font-size: 16px; /* Reduce el tamaño de la fuente del legend */
+    }
+
+    label {
+        font-size: 14px; /* Reduce el tamaño de la fuente de las etiquetas */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea,
+    select {
+        font-size: 14px; /* Reduce el tamaño de la fuente de los inputs */
+    }
+
+    button {
+        font-size: 14px; /* Reduce el tamaño de la fuente del botón */
+    }
+
+    /* Ajustes para la cabecera en móviles pequeños */
+    header nav {
+        flex-direction: column; /* Cambia a una columna en móviles */
+        gap: 5px; /* Espacio entre enlaces */
+    }
+
+    nav a {
+        font-size: 16px; /* Tamaño de fuente más pequeño */
+        margin: 0; /* Elimina el margen horizontal */
+    }
 }
