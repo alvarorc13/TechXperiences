@@ -58,6 +58,11 @@ footer {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para un efecto de profundidad */
     justify-content: center;
     align-items: center;
+    text-align: left;
+}
+
+div.enlaces-footer {
+    margin-left: 30px;
 }
 
 footer img {
